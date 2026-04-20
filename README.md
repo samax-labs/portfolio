@@ -1,43 +1,50 @@
 # Portfolio Documentation
 
-## Features
-- **Responsive Design:** Our portfolio is designed to look great on all devices, from desktops to mobile phones.
-- **Dynamic Content:** Easily update your portfolio without any coding experience through a user-friendly interface.
-- **SEO Optimized:** Each project includes SEO-friendly features to improve visibility and ranking in search engines.
+Welcome to my portfolio! This documentation provides a comprehensive overview of the project structure, features, and usage.
 
 ## Project Structure
-```
-portfolio/
-|-- index.html
-|-- css/
-|   |-- styles.css
-|-- js/
-|   |-- scripts.js
-|-- images/
-|-- projects/
-|   |-- project1/
-|   |   |-- index.html
-|   |   |-- images/
-|   |-- project2/
-|   |   |-- index.html
-|   |   |-- images/
-```
 
-## Technical Stack
-- **HTML5:** The backbone of the web pages, providing structure and semantics.
-- **CSS3:** Used for styling the project, allowing for a modern layout and responsive design.
-- **JavaScript:** Adding interactivity and dynamic behaviors to the portfolio.
-- **Node.js:** For running build scripts and backend functionalities.
+- `src/`: Contains all source code files.
+- `assets/`: Contains images, icons, and other media used in the portfolio.
+- `components/`: Contains reusable components for the application.
+- `styles/`: Contains all styling files including CSS and SASS.
+- `index.html`: The main HTML file that is served when the application runs.
+- `README.md`: This documentation file.
 
-## Customization Instructions
-1. **Clone the Repository:** Use `git clone https://github.com/username/portfolio.git` to clone the repository locally.
-2. **Install Dependencies:** Navigate to the project directory and run `npm install` to install all required packages.
-3. **Update Content:** Modify the HTML, CSS, and JavaScript files as needed to reflect your personal style and projects.
-4. **Deploy:** Deploy to your chosen hosting platform once changes are complete.
+## Features
 
-## Sections Explanation
-- **About Me:** A brief introduction to who you are and what you do.
-- **Projects:** Showcase your work, with links to live demos and source code.
-- **Contact:** A form or links for potential clients or collaborators to reach out to you.  
+- **Responsive Design**: The portfolio is designed to work on various devices and screen sizes.
+- **Dynamic Content**: Projects can be dynamically loaded from a configuration file, allowing for easy updates.
+- **Interactive UI**: Includes animations and transitions for a better user experience.
+- **Easy Navigation**: Navigation links allow users to quickly move between sections of the portfolio.
 
-This template serves as a solid foundation for creating a functional and attractive portfolio. Feel free to adapt and expand upon it based on your needs!
+## Setup Instructions
+
+1. Clone the repository: 
+   ```bash
+   git clone https://github.com/samax-labs/portfolio.git
+   ```
+2. Navigate to the project directory: 
+   ```bash
+   cd portfolio
+   ```
+3. Install dependencies: 
+   ```bash
+   npm install
+   ```
+4. Run the application: 
+   ```bash
+   npm start
+   ```
+
+## Usage
+
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the portfolio.
+
+## Contribution
+
+Feel free to fork the repository and submit pull requests for any improvements or suggestions.
+
+## License
+
+This project is licensed under the MIT License.
