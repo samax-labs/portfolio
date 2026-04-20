@@ -1,0 +1,391 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+body{
+  background: radial-gradient(circle at top, #151515, #050505);
+  color: #f2f2f2;
+  min-height:100vh;
+  padding: 30px 15px;
+}
+
+.container{
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.card{
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  backdrop-filter: blur(10px);
+}
+
+.top-grid{
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 18px;
+}
+
+.avatar-card{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap: 12px;
+  text-align:center;
+}
+
+.avatar-wrap{
+  width: 150px;
+  height: 150px;
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.avatar{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.name{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.role{
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.intro-card .headline{
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.bio{
+  opacity: 0.82;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.tag-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap: 10px;
+}
+
+.tag{
+  display:flex;
+  align-items:center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  font-size: 13px;
+}
+
+.section-card{
+  display:flex;
+  flex-direction:column;
+  gap: 12px;
+}
+
+.section-title{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+}
+
+.section-title h3{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.pill-grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap: 10px;
+}
+
+.skill-pill{
+  padding: 9px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  opacity: 0.95;
+}
+
+.two-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.timeline{
+  display:flex;
+  flex-direction:column;
+  gap: 14px;
+}
+
+.timeline-item{
+  padding: 14px;
+  border-radius: 14px;
+  background: rgba(0,0,0,0.25);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.timeline-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.timeline-top h4{
+  font-size: 15px;
+}
+
+.badge{
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+.muted{
+  opacity: 0.78;
+  font-size: 13px;
+}
+
+.timeline-item ul{
+  margin-top: 10px;
+  padding-left: 18px;
+  opacity: 0.9;
+}
+
+.timeline-item ul li{
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+
+.languages{
+  margin-top: 10px;
+}
+
+.mini-title{
+  display:flex;
+  align-items:center;
+  gap: 8px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.lang-row{
+  display:flex;
+  gap: 10px;
+  flex-wrap:wrap;
+}
+
+.lang-pill{
+  padding: 9px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  font-size: 13px;
+}
+
+.lang-pill small{
+  opacity: 0.7;
+  margin-left: 4px;
+}
+
+.tools-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap: 10px;
+}
+
+.tool{
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  font-size: 13px;
+}
+
+.links-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.link-card{
+  display:flex;
+  align-items:center;
+  gap: 12px;
+  text-decoration:none;
+  color: #f2f2f2;
+  padding: 14px;
+  border-radius: 16px;
+  background: rgba(0,0,0,0.25);
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: 0.2s ease;
+}
+
+.link-card:hover{
+  transform: translateY(-3px);
+  background: rgba(255,255,255,0.06);
+}
+
+.section.contact {
+  margin-top: 48px;
+  text-align: center;
+  border: 1px solid #dce8f8;
+  border-radius: 14px;
+  padding: 32px;
+  box-shadow: 0 6px 22px rgba(15, 77, 124, 0.08);
+}
+
+.section.contact h2 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.section.contact p {
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+.section.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.section.contact input,
+.section.contact textarea {
+  padding: 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.section.contact textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.section.contact button {
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+.btn-primary {
+  background-color: black;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  border-radius: 6px;
+  padding: 9px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+}
+
+.footer-card{
+  text-align:center;
+}
+
+.footer-row{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.footer-item{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  flex: 1;
+  min-width: 220px;
+  padding: 12px;
+  border-radius: 16px;
+  background: rgba(0,0,0,0.25);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer-title{
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.footer-value{
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.copyright{
+  opacity: 0.6;
+  font-size: 12px;
+}
+
+/* ICONS */
+.icon{
+  width: 18px;
+  height: 18px;
+  display:inline-flex;
+}
+
+.icon svg{
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  opacity: 0.85;
+}
+
+.icon.big{
+  width: 26px;
+  height: 26px;
+}
+
+/* MOBILE */
+@media(max-width: 850px){
+  .top-grid{
+    grid-template-columns: 1fr;
+  }
+  .two-grid{
+    grid-template-columns: 1fr;
+  }
+  .intro-card .headline{
+    font-size: 22px;
+  }
+}
